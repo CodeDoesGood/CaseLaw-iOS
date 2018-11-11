@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		E53632082198BE3D00A3E0A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53632072198BE3D00A3E0A8 /* AppDelegate.swift */; };
 		E536320A2198BE3D00A3E0A8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53632092198BE3D00A3E0A8 /* ViewController.swift */; };
-		E536320D2198BE3D00A3E0A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E536320B2198BE3D00A3E0A8 /* Main.storyboard */; };
 		E536320F2198BE3F00A3E0A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E536320E2198BE3F00A3E0A8 /* Assets.xcassets */; };
 		E53632122198BE3F00A3E0A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E53632102198BE3F00A3E0A8 /* LaunchScreen.storyboard */; };
 		E536321D2198BE3F00A3E0A8 /* CaseLaw_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E536321C2198BE3F00A3E0A8 /* CaseLaw_iOSTests.swift */; };
@@ -37,7 +36,6 @@
 		E53632042198BE3D00A3E0A8 /* CaseLaw-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CaseLaw-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E53632072198BE3D00A3E0A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E53632092198BE3D00A3E0A8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E536320C2198BE3D00A3E0A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E536320E2198BE3F00A3E0A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E53632112198BE3F00A3E0A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E53632132198BE3F00A3E0A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -97,11 +95,11 @@
 		E53632062198BE3D00A3E0A8 /* CaseLaw-iOS */ = {
 			isa = PBXGroup;
 			children = (
-				E53632072198BE3D00A3E0A8 /* AppDelegate.swift */,
 				E53632092198BE3D00A3E0A8 /* ViewController.swift */,
-				E536320B2198BE3D00A3E0A8 /* Main.storyboard */,
 				E536320E2198BE3F00A3E0A8 /* Assets.xcassets */,
 				E53632102198BE3F00A3E0A8 /* LaunchScreen.storyboard */,
+				E53632072198BE3D00A3E0A8 /* AppDelegate.swift */,
+				E53632352198C50D00A3E0A8 /* Resources */,
 				E53632132198BE3F00A3E0A8 /* Info.plist */,
 			);
 			path = "CaseLaw-iOS";
@@ -123,6 +121,13 @@
 				E53632292198BE3F00A3E0A8 /* Info.plist */,
 			);
 			path = "CaseLaw-iOSUITests";
+			sourceTree = "<group>";
+		};
+		E53632352198C50D00A3E0A8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,7 +236,6 @@
 			files = (
 				E53632122198BE3F00A3E0A8 /* LaunchScreen.storyboard in Resources */,
 				E536320F2198BE3F00A3E0A8 /* Assets.xcassets in Resources */,
-				E536320D2198BE3D00A3E0A8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,14 +297,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		E536320B2198BE3D00A3E0A8 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E536320C2198BE3D00A3E0A8 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E53632102198BE3F00A3E0A8 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
