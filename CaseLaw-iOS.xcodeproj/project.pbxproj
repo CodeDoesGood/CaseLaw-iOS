@@ -95,6 +95,7 @@
 		E53632062198BE3D00A3E0A8 /* CaseLaw-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				E53632362198C81200A3E0A8 /* Models */,
 				E53632092198BE3D00A3E0A8 /* ViewController.swift */,
 				E536320E2198BE3F00A3E0A8 /* Assets.xcassets */,
 				E53632102198BE3F00A3E0A8 /* LaunchScreen.storyboard */,
@@ -128,6 +129,13 @@
 			children = (
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		E53632362198C81200A3E0A8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
