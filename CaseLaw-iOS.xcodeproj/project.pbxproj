@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		77FB3C862198DBEC00800DC0 /* Bulk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FB3C852198DBEC00800DC0 /* Bulk.swift */; };
+		77FB3C8B2199F9C300800DC0 /* Courts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FB3C8A2199F9C300800DC0 /* Courts.swift */; };
+		77FB3C8D2199FC4A00800DC0 /* Volumes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FB3C8C2199FC4A00800DC0 /* Volumes.swift */; };
+		77FB3C8F2199FDE400800DC0 /* Reporters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FB3C8E2199FDE400800DC0 /* Reporters.swift */; };
+		77FB3C912199FE2C00800DC0 /* Results.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FB3C902199FE2C00800DC0 /* Results.swift */; };
 		E53632082198BE3D00A3E0A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53632072198BE3D00A3E0A8 /* AppDelegate.swift */; };
 		E536320A2198BE3D00A3E0A8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53632092198BE3D00A3E0A8 /* ViewController.swift */; };
 		E536320F2198BE3F00A3E0A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E536320E2198BE3F00A3E0A8 /* Assets.xcassets */; };
@@ -33,6 +38,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		77FB3C852198DBEC00800DC0 /* Bulk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bulk.swift; sourceTree = "<group>"; };
+		77FB3C8A2199F9C300800DC0 /* Courts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Courts.swift; sourceTree = "<group>"; };
+		77FB3C8C2199FC4A00800DC0 /* Volumes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Volumes.swift; sourceTree = "<group>"; };
+		77FB3C8E2199FDE400800DC0 /* Reporters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reporters.swift; sourceTree = "<group>"; };
+		77FB3C902199FE2C00800DC0 /* Results.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Results.swift; sourceTree = "<group>"; };
 		E53632042198BE3D00A3E0A8 /* CaseLaw-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CaseLaw-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E53632072198BE3D00A3E0A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E53632092198BE3D00A3E0A8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -72,6 +82,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		77FB3C842198DB7400800DC0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				77FB3C902199FE2C00800DC0 /* Results.swift */,
+				77FB3C8A2199F9C300800DC0 /* Courts.swift */,
+				77FB3C8C2199FC4A00800DC0 /* Volumes.swift */,
+				77FB3C8E2199FDE400800DC0 /* Reporters.swift */,
+				77FB3C852198DBEC00800DC0 /* Bulk.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		E53631FB2198BE3C00A3E0A8 = {
 			isa = PBXGroup;
 			children = (
@@ -95,7 +117,7 @@
 		E53632062198BE3D00A3E0A8 /* CaseLaw-iOS */ = {
 			isa = PBXGroup;
 			children = (
-				E53632362198C81200A3E0A8 /* Models */,
+				77FB3C842198DB7400800DC0 /* Models */,
 				E53632092198BE3D00A3E0A8 /* ViewController.swift */,
 				E536320E2198BE3F00A3E0A8 /* Assets.xcassets */,
 				E53632102198BE3F00A3E0A8 /* LaunchScreen.storyboard */,
@@ -268,8 +290,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77FB3C862198DBEC00800DC0 /* Bulk.swift in Sources */,
+				77FB3C8D2199FC4A00800DC0 /* Volumes.swift in Sources */,
+				77FB3C8F2199FDE400800DC0 /* Reporters.swift in Sources */,
+				77FB3C912199FE2C00800DC0 /* Results.swift in Sources */,
 				E536320A2198BE3D00A3E0A8 /* ViewController.swift in Sources */,
 				E53632082198BE3D00A3E0A8 /* AppDelegate.swift in Sources */,
+				77FB3C8B2199F9C300800DC0 /* Courts.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
