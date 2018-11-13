@@ -1,5 +1,5 @@
 //
-//  Courts.swift
+//  Court.swift
 //  CaseLaw-iOS
 //
 //  Created by Massimo Savino on 2018-11-12.
@@ -11,14 +11,14 @@
 
 import Foundation
 
-public struct Court: Codable {
+public struct CourtResults: Codable {
     public let count: Int
     public let next: String
     public let previous: String? = nil
-    public let results: Results
+    public let results: [Court]
 }
 
-public struct CourtResult: Codable {
+public struct Court: Codable {
     public let id: Int
     public let url: URL
     public let name: String

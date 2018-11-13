@@ -7,10 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		77E428DA219A790B00F50B5B /* Case.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E428D9219A790B00F50B5B /* Case.swift */; };
+		77E428DC219A83FF00F50B5B /* Citation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E428DB219A83FF00F50B5B /* Citation.swift */; };
+		77E428DE219A872F00F50B5B /* Jurisdiction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E428DD219A872F00F50B5B /* Jurisdiction.swift */; };
 		77FB3C862198DBEC00800DC0 /* Bulk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FB3C852198DBEC00800DC0 /* Bulk.swift */; };
-		77FB3C8B2199F9C300800DC0 /* Courts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FB3C8A2199F9C300800DC0 /* Courts.swift */; };
-		77FB3C8D2199FC4A00800DC0 /* Volumes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FB3C8C2199FC4A00800DC0 /* Volumes.swift */; };
-		77FB3C8F2199FDE400800DC0 /* Reporters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FB3C8E2199FDE400800DC0 /* Reporters.swift */; };
+		77FB3C8B2199F9C300800DC0 /* Court.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FB3C8A2199F9C300800DC0 /* Court.swift */; };
+		77FB3C8D2199FC4A00800DC0 /* Volume.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FB3C8C2199FC4A00800DC0 /* Volume.swift */; };
+		77FB3C8F2199FDE400800DC0 /* Reporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FB3C8E2199FDE400800DC0 /* Reporter.swift */; };
 		77FB3C912199FE2C00800DC0 /* Results.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FB3C902199FE2C00800DC0 /* Results.swift */; };
 		E53632082198BE3D00A3E0A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53632072198BE3D00A3E0A8 /* AppDelegate.swift */; };
 		E536320A2198BE3D00A3E0A8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53632092198BE3D00A3E0A8 /* ViewController.swift */; };
@@ -38,10 +41,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		77E428D9219A790B00F50B5B /* Case.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Case.swift; sourceTree = "<group>"; };
+		77E428DB219A83FF00F50B5B /* Citation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Citation.swift; sourceTree = "<group>"; };
+		77E428DD219A872F00F50B5B /* Jurisdiction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jurisdiction.swift; sourceTree = "<group>"; };
 		77FB3C852198DBEC00800DC0 /* Bulk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bulk.swift; sourceTree = "<group>"; };
-		77FB3C8A2199F9C300800DC0 /* Courts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Courts.swift; sourceTree = "<group>"; };
-		77FB3C8C2199FC4A00800DC0 /* Volumes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Volumes.swift; sourceTree = "<group>"; };
-		77FB3C8E2199FDE400800DC0 /* Reporters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reporters.swift; sourceTree = "<group>"; };
+		77FB3C8A2199F9C300800DC0 /* Court.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Court.swift; sourceTree = "<group>"; };
+		77FB3C8C2199FC4A00800DC0 /* Volume.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Volume.swift; sourceTree = "<group>"; };
+		77FB3C8E2199FDE400800DC0 /* Reporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reporter.swift; sourceTree = "<group>"; };
 		77FB3C902199FE2C00800DC0 /* Results.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Results.swift; sourceTree = "<group>"; };
 		E53632042198BE3D00A3E0A8 /* CaseLaw-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CaseLaw-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E53632072198BE3D00A3E0A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -86,9 +92,12 @@
 			isa = PBXGroup;
 			children = (
 				77FB3C902199FE2C00800DC0 /* Results.swift */,
-				77FB3C8A2199F9C300800DC0 /* Courts.swift */,
-				77FB3C8C2199FC4A00800DC0 /* Volumes.swift */,
-				77FB3C8E2199FDE400800DC0 /* Reporters.swift */,
+				77E428D9219A790B00F50B5B /* Case.swift */,
+				77E428DB219A83FF00F50B5B /* Citation.swift */,
+				77E428DD219A872F00F50B5B /* Jurisdiction.swift */,
+				77FB3C8A2199F9C300800DC0 /* Court.swift */,
+				77FB3C8C2199FC4A00800DC0 /* Volume.swift */,
+				77FB3C8E2199FDE400800DC0 /* Reporter.swift */,
 				77FB3C852198DBEC00800DC0 /* Bulk.swift */,
 			);
 			path = Models;
@@ -283,13 +292,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77E428DE219A872F00F50B5B /* Jurisdiction.swift in Sources */,
 				77FB3C862198DBEC00800DC0 /* Bulk.swift in Sources */,
-				77FB3C8D2199FC4A00800DC0 /* Volumes.swift in Sources */,
-				77FB3C8F2199FDE400800DC0 /* Reporters.swift in Sources */,
+				77FB3C8D2199FC4A00800DC0 /* Volume.swift in Sources */,
+				77FB3C8F2199FDE400800DC0 /* Reporter.swift in Sources */,
+				77E428DC219A83FF00F50B5B /* Citation.swift in Sources */,
 				77FB3C912199FE2C00800DC0 /* Results.swift in Sources */,
 				E536320A2198BE3D00A3E0A8 /* ViewController.swift in Sources */,
+				77E428DA219A790B00F50B5B /* Case.swift in Sources */,
 				E53632082198BE3D00A3E0A8 /* AppDelegate.swift in Sources */,
-				77FB3C8B2199F9C300800DC0 /* Courts.swift in Sources */,
+				77FB3C8B2199F9C300800DC0 /* Court.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

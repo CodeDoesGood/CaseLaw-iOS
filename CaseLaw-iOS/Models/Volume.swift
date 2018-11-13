@@ -11,14 +11,14 @@
 
 import Foundation
 
-public struct Volumes: Codable {
+public struct VolumeResults: Codable {
     public let count: Int
     public let next: String
     public let previous: String? = nil
-    let results: Results
+    let results: [Volume]
 }
 
-public struct VolumeResults: Codable {
+public struct Volume: Codable {
     public let url: String
     public let barcode: Int
     public let volumeNumber: Int? = nil

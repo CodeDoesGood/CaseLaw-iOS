@@ -12,14 +12,14 @@
 
 import Foundation
 
-public struct Bulk: Codable {
+public struct BulkResult: Codable {
     public let count: Int
     public let next: String
     public let previous: String? = nil
-    let results: Results
+    let results: [Bulk]
 }
 
-public struct BulkResult: Codable {
+public struct Bulk: Codable {
     public let id: Int
     public let downloadURL: URL
     public let zipFilename: String
