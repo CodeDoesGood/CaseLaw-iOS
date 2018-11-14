@@ -16,6 +16,24 @@ public struct CitationResults: Codable {
     public let next: String
     public let previous: String? = nil
     public let results: [Citation]
+    
+    init(count: Int, next: String, previous: String? = nil, results: [Citation]) {
+        self.count = count
+        self.next = next
+        self.previous = previous
+        self.results = results
+    }
+    
+    init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        
+        let count = try container.decode(Int.self, forKey: .count)
+        let next = try container.decode(String.self, forKey: .next)
+        let previous = try container.decode(String.self, forKey: .previous)
+        let results = try container.decode([Citation].self, forKey: .results)
+        
+        self.init(count: count, next: next, previous: previous, results: results)
+    }
 }
 
 public struct Citation: Codable {
@@ -29,5 +47,23 @@ public struct Citation: Codable {
         case cite
         case caseID = "case_id"
         case caseURL = "case_url"
+    }
+    
+    init(type: String, cite: String, caseID: Int, caseURL: String) {
+        self.type = type
+        self.cite = cite
+        self.caseID = caseID
+        self.caseURL = caseURL
+    }
+    
+    init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        
+        let type = try container.decode(String.self, forKey: .type)
+        let cite = try container.decode(String.self, forKey: .cite)
+        let caseID = try container.decode(Int.self, forKey: .caseID)
+        let caseURL = try container.decode(String.self, forKey: .caseURL)
+        
+        self.init(type: type, cite: cite, caseID: caseID, caseURL: caseURL)
     }
 }

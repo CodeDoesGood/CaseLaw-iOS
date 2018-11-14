@@ -16,4 +16,4 @@ public enum FilterType: String, Codable {
     case Casebody = "Casebody"
 }
 
-typealias Results = [Result]
+// typealias Results = [Result]
